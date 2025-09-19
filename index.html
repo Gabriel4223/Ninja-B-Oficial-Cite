@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja B - Site Oficial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            border: 2px solid #000;
+            background-color: #fff;
+            box-shadow: 5px 5px 0px 0px #888;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            background-color: #ffcc00; /* Yellow */
+            border: 2px solid #000;
+            margin-bottom: 10px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .content-row {
+            display: flex;
+            width: 100%;
+        }
+
+        .section-header {
+            border: 2px solid #000;
+            text-align: center;
+            font-weight: bold;
+            padding: 8px 0;
+            flex: 1;
+            margin-right: -2px;
+        }
+
+        .credits-header {
+            background-color: #ffcc00; /* Yellow */
+        }
+
+        .downloads-header {
+            background-color: #ff6600; /* Orange-Red */
+        }
+
+        .section-content {
+            border: 2px solid #000;
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .credits-content {
+            background-color: #ffcc00; /* Yellow */
+        }
+
+        .downloads-content {
+            background-color: #ff6600; /* Orange-Red */
+        }
+
+        .downloads-content .button-container {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .downloads-content .button-container:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            width: 80%;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #000;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .button.download {
+            background-color: #bbb; /* Gray */
+        }
+
+        .button.dlc {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="Ninja B Logo.png" alt="Ninja B Logo">
+    </div>
+    <div class="content">
+        <div class="content-row">
+            <div class="section-header credits-header">CRÉDITOS</div>
+            <div class="section-header downloads-header">DOWNLOADS</div>
+        </div>
+        <div class="content-row">
+            <div class="section-content credits-content">
+                <p style="white-space: pre-wrap; font-size: 14px;">Produção: Gabriel, Nathanael
+
+Sprite Lizard: Nathanael
+Sprite Chão: Gabriel
+Sprite Fundo Faze1: Internet
+Sprite Katana: Nathanael, Internet
+Edição Sprite Katana: Gabriel
+Sprite Logo Ninja B: Gabriel
+Melhorado Imagem Logo Ninja B: IA
+
+Programação: Gabriel
+
+Programação App CCode: Gabriel,Nathanael
+
+Apps Para Criação Do Jogo Funcional: Pocket Code
+App Antiga Criação: CCode
+
+Apps Musica Do Jogo:
+Music Creator
+
+Musica Faze 1: Nathanael
+Musica Expandida: IA
+
+Musicas Pegadas Do Youtube Para Juntar Na Musica
+
+Fisica Antiga: Fisica Real CCode
+Fisica Nova: Feita Com Variavel Por Enquanto</p>
+            </div>
+            <div class="section-content downloads-content">
+                <div class="button-container">
+                    <span>WINDOWS</span>
+                    <span class="button download">Em Breve</span>
+                </div>
+                <div class="button-container">
+                    <span>ANDROID</span>
+                    <span class="button download">DOWNLOAD</span>
+                </div>
+                <div class="button-container">
+                    <span>DOWNLOAD DLC</span>
+                    <a href="https://www.mediafire.com/file/b27vyfv141lyqbz/Ninja+B+Prototico+Dev1.1+2025+-+interminado+faze+1.apk/file" class="button dlc" target="_blank">DOWNLOAD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
